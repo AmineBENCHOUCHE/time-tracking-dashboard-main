@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>Frontend Mentor | Time tracking dashboard</title>
+    
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -47,9 +48,9 @@
         </div>
         <div class="">
           <ul class="list-none rounded-b-xl">
-            <li class="px-5 py-2 text-DesaturatedBlue">Daily</li>
-            <li class="px-5 py-2 text-white bold">Weekly</li>
-            <li class="px-5 py-2 text-DesaturatedBlue">Monthly</li>
+            <li class="date px-5 py-2 text-DesaturatedBlue" id="daily">Daily</li>
+            <li class="date px-5 py-2 text-white bold" id="weekly">Weekly</li>
+            <li class="date px-5 py-2 text-DesaturatedBlue" id="monthly">Monthly</li>
           </ul>
         </div>
       </div>
@@ -64,9 +65,11 @@
             <p class="text-white p-5 text-sm font-semibold">Work</p>
             <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
           </div>
-          <p class="text-white px-8 text-5xl font-light">5hrs</p>
-          <!-- daily -->
-          <p class="text-PaleBlue px-8 mt-2">Previous - 7hr</p>
+          <div id="work">
+            <p class="text-white px-8 text-5xl font-light" id="hoursWork"></p>
+            <!-- daily -->
+            <p class="text-PaleBlue px-8 mt-2" id="previousHoursWork"></p>
+          </div>
         </div>
 
         <!-- daily 32hrs -->
@@ -88,9 +91,9 @@
             <p class="text-white p-5 text-sm font-semibold">Play</p>
             <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
           </div>
-          <p class="text-white px-8 text-5xl font-light">3hr</p>
+          <p class="text-white px-8 text-5xl font-light" id="hoursPlay"></p>
           <!-- daily -->
-          <p class="text-PaleBlue px-8 mt-2">Previous - 2hrs</p>
+          <p class="text-PaleBlue px-8 mt-2" id="previousHoursPlay"></p>
           <!-- daily -->
           <!-- 10hrs -->
           <!-- weekly -->
@@ -112,9 +115,9 @@
             <p class="text-white p-5 text-sm font-semibold">Study</p>
             <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
           </div>
-          <p class="text-white px-8 text-5xl font-light">10hrs</p>
+          <p class="text-white px-8 text-5xl font-light" id="hoursStudy"></p>
           <!-- daily -->
-          <p class="text-PaleBlue px-8 mt-2">Previous - 1hr</p>
+          <p class="text-PaleBlue px-8 mt-2" id="previousHoursStudy"></p>
           <!-- daily -->
           <!-- 4hrs -->
           <!-- weekly -->
@@ -139,9 +142,9 @@
             <p class="text-white p-5 text-sm font-semibold">Exercice</p>
             <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
           </div>
-          <p class="text-white px-8 text-5xl font-light">4hr</p>
+          <p class="text-white px-8 text-5xl font-light" id="hoursExercice"></p>
           <!-- daily -->
-          <p class="text-PaleBlue px-8 mt-2">Previous - 1hr</p>
+          <p class="text-PaleBlue px-8 mt-2" id="previousHoursExercice">Previous - 1hr</p>
           <!-- daily -->
           <!-- 4hrs -->
           <!-- weekly -->
@@ -165,9 +168,9 @@
             <p class="text-white p-5 text-sm font-semibold">Social</p>
             <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
           </div>
-          <p class="text-white px-8 text-5xl font-light">1hr</p>
+          <p class="text-white px-8 text-5xl font-light" id="hoursSocial"></p>
           <!-- daily -->
-          <p class="text-PaleBlue px-8 mt-2">Previous - 3hrs</p>
+          <p class="text-PaleBlue px-8 mt-2" id="previousHoursSocial">Previous - 3hrs</p>
           <!-- daily -->
           <!-- 5hrs -->
           <!-- weekly -->
@@ -191,9 +194,9 @@
               <p class="text-white p-5 text-sm font-semibold">Self Care</p>
               <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
             </div>
-            <p class="text-white px-8 text-5xl font-light">1hr</p>
+            <p class="text-white px-8 text-5xl font-light" id="hoursSelfCare"></p>
             <!-- daily -->
-            <p class="text-PaleBlue px-8 mt-2">Previous - 1hr</p>
+            <p class="text-PaleBlue px-8 mt-2" id="previousHoursSelfCare"></p>
             <!-- daily -->
             <!-- 2hrs -->
             <!-- weekly -->
@@ -216,4 +219,5 @@
       Coded by <a href="#">Amine Benchouche</a>
     </div>
   </body>
+  <script src="/dist/script.js"></script>
 </html>
