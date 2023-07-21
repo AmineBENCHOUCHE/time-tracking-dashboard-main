@@ -103,32 +103,32 @@ liElements.forEach((element) => {
       document.getElementById("hoursWork").innerHTML =
         tableHoursByCategory[0].hoursWeekly;
       document.getElementById("previousHoursWork").innerHTML =
-        tableHoursByCategory[0].previousHourswhoursWeekly;
+        tableHoursByCategory[0].previousHoursWeekly;
       /*Play */
       document.getElementById("hoursPlay").innerHTML =
         tableHoursByCategory[1].hoursWeekly;
       document.getElementById("previousHoursPlay").innerHTML =
-        tableHoursByCategory[1].previousHourswhoursWeekly;
+        tableHoursByCategory[1].previousHoursWeekly;
       /*Study*/
       document.getElementById("hoursStudy").innerHTML =
         tableHoursByCategory[2].hoursWeekly;
       document.getElementById("previousHoursStudy").innerHTML =
-        tableHoursByCategory[2].previousHourswhoursWeekly;
+        tableHoursByCategory[2].previousHoursWeekly;
       /*Exercice*/
       document.getElementById("hoursExercice").innerHTML =
         tableHoursByCategory[3].hoursWeekly;
       document.getElementById("previousHoursExercice").innerHTML =
-        tableHoursByCategory[3].previousHourswhoursWeekly;
+        tableHoursByCategory[3].previousHoursWeekly;
       /*Social*/
       document.getElementById("hoursSocial").innerHTML =
         tableHoursByCategory[4].hoursWeekly;
       document.getElementById("previousHoursSocial").innerHTML =
-        tableHoursByCategory[4].previousHourswhoursWeekly;
+        tableHoursByCategory[4].previousHoursWeekly;
       /*Self care*/
       document.getElementById("hoursSelfCare").innerHTML =
         tableHoursByCategory[5].hoursWeekly;
       document.getElementById("previousHoursSelfCare").innerHTML =
-        tableHoursByCategory[5].previousHourswhoursWeekly;
+        tableHoursByCategory[5].previousHoursWeekly;
     } else {
       /* Chane text color of the selection */
       document.getElementById("monthly").style.color = "White";
@@ -138,32 +138,32 @@ liElements.forEach((element) => {
       document.getElementById("hoursWork").innerHTML =
         tableHoursByCategory[0].hoursMonthly;
       document.getElementById("previousHoursWork").innerHTML =
-        tableHoursByCategory[0].previousHourswhoursMonthly;
+        tableHoursByCategory[0].previousHoursMonthly;
       /*Play */
       document.getElementById("hoursPlay").innerHTML =
         tableHoursByCategory[1].hoursMonthly;
       document.getElementById("previousHoursPlay").innerHTML =
-        tableHoursByCategory[1].previousHourswhoursMonthly;
+        tableHoursByCategory[1].previousHoursMonthly;
       /*Study*/
       document.getElementById("hoursStudy").innerHTML =
         tableHoursByCategory[2].hoursMonthly;
       document.getElementById("previousHoursStudy").innerHTML =
-        tableHoursByCategory[2].previousHourswhoursMonthly;
+        tableHoursByCategory[2].previousHoursMonthly;
       /*Exercice*/
       document.getElementById("hoursExercice").innerHTML =
         tableHoursByCategory[3].hoursMonthly;
       document.getElementById("previousHoursExercice").innerHTML =
-        tableHoursByCategory[3].previousHourswhoursMonthly;
+        tableHoursByCategory[3].previousHoursMonthly;
       /*Social*/
       document.getElementById("hoursSocial").innerHTML =
         tableHoursByCategory[4].hoursMonthly;
       document.getElementById("previousHoursSocial").innerHTML =
-        tableHoursByCategory[4].previousHourswhoursMonthly;
+        tableHoursByCategory[4].previousHoursMonthly;
       /*Self care*/
       document.getElementById("hoursSelfCare").innerHTML =
         tableHoursByCategory[5].hoursMonthly;
       document.getElementById("previousHoursSelfCare").innerHTML =
-        tableHoursByCategory[5].previousHourswhoursMonthly;
+        tableHoursByCategory[5].previousHoursMonthly;
     }
   });
 });
