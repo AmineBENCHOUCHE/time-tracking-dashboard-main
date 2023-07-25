@@ -167,3 +167,40 @@ liElements.forEach((element) => {
     }
   });
 });
+
+// DARKMODE
+
+let darkMode = localStorage.getItem("drakMode");
+console.log(darkMode);
+const darkModeToggle = document.querySelector("#dark-mode-toggle");
+
+//Check if darkmode is enabled
+//If it is enabled turn it off
+//If it is disabled turn it on
+
+const enableDarkMode = () => {
+  //add class darmode to the body
+  document.body.classList.add("darkMode");
+  //update darmode in local storage
+  localStorage.setItem("darkMode", "enabled");
+};
+const disableDarkMode = () => {
+  //add class darmode to the body
+  document.body.classList.remove("darkMode");
+  //update darmode in local storage
+  localStorage.setItem("darkMode", null);
+};
+
+if (darkMode === "enabled") {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode");
+  console.log(darkMode);
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  } else {
+    disableDarkMode();
+  }
+});
