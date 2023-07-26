@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./dist/images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik">
@@ -131,32 +131,32 @@
     class="mt-10 flex flex-col gap-4 justify-center items-center min-w-[450px] lg:w-[1600px] sm:w-[450px] md:w-[1600px]"
   >
   
-  <section class="sm:mt-5 lg:flex md:flex gap-6 sm:flex-row lg:w-[1000px] md:w-[1000px] sm:w-[400px] sm:min-h-[1200px] md:min-h-[700px] lg:min-h-[500px] lg:ml-0">
-    <div id="dark-mode-toggle" class="absolute top-5  mb-5 flex items-center w-14 h-6 rounded-lg z-50 border-s border-2">
+  <section class="w-[400px] gap-6 sm:mt-5 lg:flex md:flex sm:flex-row lg:w-[1000px] md:w-[1000px] sm:w-[400px] sm:min-h-[1200px] md:min-h-[700px] lg:min-h-[500px] lg:ml-0">
+    <div id="dark-mode-toggle" class="absolute top-2  flex items-center w-14 h-6 rounded-lg z-50 border-s border-2">
       <i class="fas fa-solid fa-sun sun"></i>
       <i class="fas fa-solid fa-moon slider"></i>
     </div>
     <!-- Person card  -->
-      <div class=" card fullPersonCard lg:w-[225px] md:w-[225px] sm:w-[300px] rounded-xl sm:min-h-[100px] z-50">
-        <div class="personCard rounded-xl sm:h-1/2 md:h-2/3 sm:max-h-[150px] lg:max-h-[400px] md:max-h-[400px] sm:pt-0 md:p-5 lg:p-5 lg:flex-col md:flex-col
+      <div class=" card fullPersonCard w-[300px] lg:w-[225px] md:w-[225px] sm:w-[300px] rounded-xl sm:min-h-[100px] z-50">
+        <div class="personCard p-5 rounded-xl flex justify-around items-center  sm:h-1/2 md:h-2/3 sm:max-h-[150px] lg:max-h-[400px] md:max-h-[400px] sm:p-5 md:p-5 lg:p-5 lg:flex-col md:flex-col
          lg:items-start lg:justify-start 
          md:justify-start md:items-start
-        sm:flex sm:justify-around sm:items-center ">
+         sm:flex sm:justify-around sm:items-center ">
           <img
-            class="photo sm:w-12 md:w-28 sm:mx-2 lg:mx-0 md:mx-0 border-4 border-white rounded-full"
-            src="/images/image-jeremy.png"
+            class="photo border-4 w-16 mx-2 border-white rounded-full  sm:w-16 md:w-28 sm:mx-2 lg:mx-0 md:mx-0"
+            src="/dist/images/image-jeremy.png"
             alt=""
           />
-          <div class="flex flex-col md:pt-8 lg:px-5 md:px-5 sm:mb-2 sm:inline">
-            <p class="text-PaleBlue sm:pt-2 sm:text-lg md:text-2xl">Report for</p>
-            <p class="textPerson md:text-4xl lg:text-4xl sm:text-2xl font-normal">
+          <div class="inline mb-2 md:pt-8 lg:px-5 md:px-5 sm:mb-2 sm:inline">
+            <p class="text-PaleBlue pt-2 text-lg sm:pt-2 sm:text-lg md:text-2xl">Report for</p>
+            <p class="textPerson font-normal text-2xl md:text-4xl lg:text-4xl sm:text-2xl ">
               Jeremy
               Robson
             </p>
           </div>
         </div>
-        <div class="filterDate rounded-lg">
-          <ul class="list-none  pt-5 md:flex-col lg:flex-col sm:flex justify-center sm:items-center md:items-start md:justify-between lg:justify-between sm:pb-2 md:pt-10 md:text-2xl lg:text-base">
+        <div class="filterDate rounded-xl">
+          <ul class="list-none flex justify-center items-center p-5 md:flex-col lg:flex-col sm:flex  sm:items-center md:items-start md:justify-between lg:justify-between sm:pb-2 md:pt-10 md:text-2xl lg:text-base">
             <li class="date px-5 md:py-4 lg:py-0 sm:inline text-DesaturatedBlue "  id="daily">Daily</li>
             <li class="date px-5 md:py-4 lg:py-2 sm:inline text-DesaturatedBlue" id="weekly">Weekly</li>
             <li class="date px-5 md:py-4 lg:py-2 sm:inline text-DesaturatedBlue" id="monthly">Monthly</li>
@@ -164,36 +164,36 @@
         </div>
       </div>
       <!-- category -->
-      <div class="grid sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 md:grid-rows-3 lg:w-[900px] md:w-[900px] sm:w-[300px] min-w-[300px] col-start-2 col-span-full row-span-2 gap-6  sm:mt-6 lg:mt-0 md:mt-0">
+      <div class="grid col-start-2 col-span-full row-span-2 gap-6 mt-6 sm:grid-col-1 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-2 md:grid-rows-3 lg:w-[900px] md:w-[900px] sm:w-[300px] min-w-[300px]   sm:mt-6 lg:mt-0 md:mt-0">
         <div class="card rounded-xl bg-workColor-darkmode relative max-[225px] min-h-[175px] ">
           <div class="h-1/5 rounded-t-xl ">
-            <img class="absolute top-0 right-0 mt-1 mr-3 w-20" src="/images/icon-work.svg" alt="icon work"/>
+            <img class="absolute top-0 right-0 mt-1 mr-3 w-20" src="/dist/images/icon-work.svg" alt="icon work"/>
           </div>
           <div class="work absolute bottom-0 z-50 w-full h-4/5 rounded-xl flex-col justify-between">
             <div class=" flex justify-between mr-5 items-center rounded-t-xl ">
-              <p class="textCat  p-5 text-[18px] font-semibold">Work</p>
-              <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+              <p class="hours px-5  p-5 text-[18px] font-semibold">Work</p>
+              <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
             </div>
-            <div id="work" class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-              <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursWork"></p>
+            <div id="work" class="mr-5 flex justify-between items-center sm:flex sm:justify-between sm:items-center  md:flex-col md:justify-center md:items-start">
+              <p class="hours px-5 text-3xl font-normal sm:px-5 md:px-8 sm:text-4xl md:text-5xl " id="hoursWork"></p>
               <!-- daily -->
-              <p class="hours md:pl-8 mt-2 md:text-xl " id="previousHoursWork"></p>
+              <p class="hours px-0 md:pl-8 mt-2 md:text-xl " id="previousHoursWork"></p>
             </div>
           </div>
         </div>
         <div class="card rounded-xl relative bg-playColor-darkmode max-[400px] min-h-[175px]">
           <div class="h-1/5 rounded-t-xl">
-            <img class="absolute top-0 right-0 mt-1 mr-3 w-20"src="/images/icon-play.svg" alt="" />
+            <img class="absolute top-0 right-0 mt-1 mr-3 w-20"src="/dist/images/icon-play.svg" alt="" />
           </div>
           <div class="play absolute bottom-0 z-50 w-full h-4/5 rounded-xl bg-cardColor-darkMode">
             <div class="flex justify-between mr-5 items-center">
-              <p class="textCat p-5 text-[18px] font-semibold">Play</p>
-              <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+              <p class="hours px-5 p-5 text-[18px] font-semibold">Play</p>
+              <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
             </div>
-            <div class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-              <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursPlay"></p>
+            <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
+              <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursPlay"></p>
               <!-- daily -->
-              <p class="hours md:pl-8 mt-2 md:text-xl " id="previousHoursPlay"></p>
+              <p class="hours px-0 px-5 md:pl-8 mt-2 md:text-xl " id="previousHoursPlay"></p>
             </div>
             <!-- daily -->
             <!-- 10hrs -->
@@ -208,17 +208,17 @@
         </div>
         <div class="card rounded-xl bg-studyColor-darkmode relative  max-[400px] min-h-[175px]">
           <div class="h-1/5 rounded-t-xl ">
-            <img class="absolute top-0 right-0 mt-1 mr-3 w-20" src="/images/icon-study.svg" alt="icon study" />
+            <img class="absolute top-0 right-0 mt-1 mr-3 w-20" src="/dist/images/icon-study.svg" alt="icon study" />
           </div>
           <div class=" study absolute bottom-0 z-50 w-full h-4/5 rounded-xl bg-cardColor-darkMode">
             <div class="flex justify-between mr-5 items-center">
-              <p class="textCat p-5 text-[18px] font-semibold">Study</p>
-              <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+              <p class="hours px-5 p-5 text-[18px] font-semibold">Study</p>
+              <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
             </div>
-            <div class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-              <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursStudy"></p>
+            <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
+              <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursStudy"></p>
               <!-- daily -->
-              <p class="hours md:pl-8 mt-2 md:text-xl" id="previousHoursStudy"></p>
+              <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursStudy"></p>
               <!-- daily -->
             </div>
             <!-- 4hrs -->
@@ -235,17 +235,17 @@
           <div
             class="h-1/5 rounded-t-xl "
           >
-            <img src="/images/icon-exercise.svg" alt="" class="absolute top-0 right-0 mt-5 mr-3 w-20"/>
+            <img src="/dist/images/icon-exercise.svg" alt="" class="absolute top-0 right-0 mt-5 mr-3 w-20"/>
           </div>
           <div class="exercice absolute bottom-0 z-50 w-full rounded-xl h-4/5">
             <div class="flex justify-between mr-5 items-center">
-              <p class="textCat p-5 text-[18px] font-semibold">Exercice</p>
-              <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+              <p class="hours px-5 p-5 text-[18px] font-semibold">Exercice</p>
+              <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
             </div>
-            <div class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-              <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursExercice"></p>
+            <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
+              <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursExercice"></p>
               <!-- daily -->
-              <p class="hours  md:pl-8 mt-2 md:text-xl" id="previousHoursExercice"></p>
+              <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursExercice"></p>
             </div>
             <!-- daily -->
             <!-- 4hrs -->
@@ -262,17 +262,17 @@
           <div
             class="h-1/5 rounded-t-xl bg-socialColor-darkmode"
           >
-            <img src="/images/icon-social.svg" alt=""  class="absolute top-0 right-0 mt-1 mr-3 w-20"/>
+            <img src="/dist/images/icon-social.svg" alt=""  class="absolute top-0 right-0 mt-1 mr-3 w-20"/>
           </div>
           <div class="social absolute bottom-0 z-50 w-full rounded-xl h-4/5">
             <div class="flex justify-between mr-5 items-center">
-              <p class="textCat p-5 text-[18px] font-semibold">Social</p>
-              <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+              <p class="hours px-5 p-5 text-[18px] font-semibold">Social</p>
+              <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
             </div>
-            <div class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-              <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSocial"></p>
+            <div class=" flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
+              <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSocial"></p>
               <!-- daily -->
-              <p class="hours md:pl-8 mt-2 md:text-xl" id="previousHoursSocial"></p>
+              <p class="hours px-0 px-5 md:pl-8 mt-2 md:text-xl" id="previousHoursSocial"></p>
             </div>
             <!-- daily -->
             <!-- 5hrs -->
@@ -289,17 +289,17 @@
           <div
             class="h-1/5 flex justify-end rounded-t-xl bg-selfCareColor-darkmode"
           >
-            <img src="/images/icon-self-care.svg" alt="" class="absolute top-0 right-0 mt-1 mr-3 w-20" />
+            <img src="/dist/images/icon-self-care.svg" alt="" class="absolute top-0 right-0 mt-1 mr-3 w-20" />
           </div>
             <div class="selfCare absolute bottom-0 z-50 w-full rounded-xl h-4/5">
               <div class="flex justify-between mr-5 items-center">
-                <p class="textCat pl-5 pt-5 pb-5 text-[18px] font-semibold">Self Care</p>
-                <img class="h-2" src="/images/icon-ellipsis.svg" alt="" />
+                <p class="hours px-5 pl-5 pt-5 pb-5 text-[18px] font-semibold">Self Care</p>
+                <img class="h-2" src="/dist/images/icon-ellipsis.svg" alt="" />
               </div>
-              <div class="sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
-                <p class="textCat sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSelfCare"></p>
+              <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
+                <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSelfCare"></p>
                 <!-- daily -->
-                <p class="hours md:pl-8 mt-2 md:text-xl" id="previousHoursSelfCare"></p>
+                <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursSelfCare"></p>
               </div>
               <!-- daily -->
               <!-- 2hrs -->
