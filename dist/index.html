@@ -24,7 +24,7 @@
       :root{
 
         --lightBackGround: white;
-        --darkBackGround: hsl(226, 43%, 10%);
+        --darkBackGround: hsl(226, 43%, 10%) ;
         --background: var(--lightBackGround);
         --borderColorToggle: var(--darkBackGround);
         --darkTogglePosition: 35px;
@@ -34,13 +34,21 @@
         --textDarkCatColor: white;
         --textCatColor: var(--textLightCatColor);
         --textLightHoursColor: hsl(226, 43%, 10%);
-        --textDarkHoursColor: hsl(236, 100%, 87%);
+        --textDarkHoursColor: white;
         --textHoursColor: var(--textLightCatColor);
+        --textLightPreviousHoursColor: hsl(226, 43%, 10%);
+        --textDarkPreviousHoursColor: hsl(236, 100%, 87%);
+        --textPreviousHoursColor: var(--textLightPreviousHoursColor);
         --personCardLight: white;
         --personCardDark: hsl(246, 80%, 60%);
-        --txtAttributionColor: var(--textLightHoursColor);
-        --dateFilterTextColor: var(--textDarkHoursColor);
         --personCardColor: var(--personCardLight);
+        --filterDateBgLight: hsl(246, 80%, 60%);
+        --filterDateBgDark:  hsl(235, 46%, 20%) ;
+        --filterDateBgColor: var(--filterDateBgLight);
+        --txtAttributionColor: var(--textLightHoursColor);
+        --dateFilterTextLightColor: hsl(236, 100%, 87%);
+        --dateFilterTextDarkColor: hsl(226, 43%, 10%);
+        --dateFilterTextColor: var(--dateFilterTextLightColor);
         --darkCardColor:  hsl(235, 46%, 20%);
         --lightCardColor:  white;
         --cardColor: var(--lightCardColor);
@@ -55,8 +63,10 @@
         --textCatColor: var(--textDarkCatColor);
         --cardColor: var(--darkCardColor);
         --textHoursColor: var(--textDarkHoursColor);
+        --textPreviousHoursColor: var(--textDarkPreviousHoursColor);
         --personCardColor: var(--personCardDark);
-        --dateFilterTextColor: var(--textLightHoursColor);
+        --dateFilterTextColor: var(--dateFilterTextDarkColor);
+        --filterDateBgColor: var(--filterDateBgDark);
         --txtAttributionColor: var(--textDarkHoursColor);
         --displayIconNight: block;
         --displayIconSun: none;
@@ -85,10 +95,7 @@
         transition: background-color 0.8s;
         color: #000;
       }
-      .personCard{
-        background-color: var(--personCardColor);
-        transition: background-color 0.8s;
-      }
+      
       .textCat, .textPerson{
         color: var(--textCatColor);
         transition: color 0.8s;
@@ -102,10 +109,15 @@
         box-shadow: 5px 2px 20px rgba(1, 1, 2, 0.2);
       } 
       .fullPersonCard{
-        background-color: var(--textHoursColor);
+        background-color:var(--filterDateBgColor);
       }
+      .personCard{
+        background-color: var(--personCardColor);
+        transition: background-color 0.8s;
+      }
+      
       .filterDate{
-        background-color: var(--textHoursColor);
+        background-color: var(--filterDateBgColor);
       }
       .photo{
         border-color: var(--textCatColor);
@@ -113,6 +125,10 @@
       }
       .hours{
         color: var(--textHoursColor);
+        transition: color 0.8s;
+      }
+      .previousHours{
+        color: var(--textPreviousHoursColor);
         transition: color 0.8s;
       }
       .attribution {
@@ -156,8 +172,8 @@
           </div>
         </div>
         <div class="filterDate rounded-xl">
-          <ul class="list-none flex justify-center items-center p-5 md:flex-col lg:flex-col sm:flex  sm:items-center md:items-start md:justify-between lg:justify-between sm:pb-2 md:pt-10 md:text-2xl lg:text-base">
-            <li class="date px-5 md:py-4 lg:py-0 sm:inline text-DesaturatedBlue "  id="daily">Daily</li>
+          <ul class="list-none flex justify-center items-center px-5 md:flex-col lg:flex-col sm:flex  sm:items-center md:items-start md:justify-between lg:justify-between sm:pb-2 md:pt-10 lg:pt-2 md:text-2xl lg:text-base">
+            <li class="date px-5 md:py-4 lg:pt-5 lg:pb-2 sm:inline text-DesaturatedBlue "  id="daily">Daily</li>
             <li class="date px-5 md:py-4 lg:py-2 sm:inline text-DesaturatedBlue" id="weekly">Weekly</li>
             <li class="date px-5 md:py-4 lg:py-2 sm:inline text-DesaturatedBlue" id="monthly">Monthly</li>
           </ul>
@@ -177,7 +193,7 @@
             <div id="work" class="mr-5 flex justify-between items-center sm:flex sm:justify-between sm:items-center  md:flex-col md:justify-center md:items-start">
               <p class="hours px-5 text-3xl font-normal sm:px-5 md:px-8 sm:text-4xl md:text-5xl " id="hoursWork"></p>
               <!-- daily -->
-              <p class="hours px-0 md:pl-8 mt-2 md:text-xl " id="previousHoursWork"></p>
+              <p class="previousHours px-0 md:pl-8 mt-2 md:text-xl " id="previousHoursWork"></p>
             </div>
           </div>
         </div>
@@ -193,7 +209,7 @@
             <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
               <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursPlay"></p>
               <!-- daily -->
-              <p class="hours px-0 px-5 md:pl-8 mt-2 md:text-xl " id="previousHoursPlay"></p>
+              <p class="previousHours px-0  md:pl-8 mt-2 md:text-xl " id="previousHoursPlay"></p>
             </div>
             <!-- daily -->
             <!-- 10hrs -->
@@ -218,7 +234,7 @@
             <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
               <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursStudy"></p>
               <!-- daily -->
-              <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursStudy"></p>
+              <p class="previousHours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursStudy"></p>
               <!-- daily -->
             </div>
             <!-- 4hrs -->
@@ -245,7 +261,7 @@
             <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
               <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursExercice"></p>
               <!-- daily -->
-              <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursExercice"></p>
+              <p class="previousHours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursExercice"></p>
             </div>
             <!-- daily -->
             <!-- 4hrs -->
@@ -272,7 +288,7 @@
             <div class=" flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
               <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSocial"></p>
               <!-- daily -->
-              <p class="hours px-0 px-5 md:pl-8 mt-2 md:text-xl" id="previousHoursSocial"></p>
+              <p class="previousHours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursSocial"></p>
             </div>
             <!-- daily -->
             <!-- 5hrs -->
@@ -299,7 +315,7 @@
               <div class="flex sm:flex justify-between items-center mr-5 md:flex-col md:justify-center md:items-start">
                 <p class="hours px-5 text-3xl sm:px-5 md:px-8 sm:text-4xl md:text-5xl font-normal" id="hoursSelfCare"></p>
                 <!-- daily -->
-                <p class="hours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursSelfCare"></p>
+                <p class="previousHours px-0 md:pl-8 mt-2 md:text-xl" id="previousHoursSelfCare"></p>
               </div>
               <!-- daily -->
               <!-- 2hrs -->

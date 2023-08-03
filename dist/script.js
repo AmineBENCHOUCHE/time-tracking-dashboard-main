@@ -60,10 +60,11 @@ liElements.forEach((element) => {
   element.addEventListener("click", function () {
     // Add your code to handle the click event here...
     if (element.id === "daily") {
+     
       /* Chane text color of the selection */
       document.getElementById("daily").style.color = "White";
-      document.getElementById("weekly").style.color = "hsl(235,45%,61%)";
-      document.getElementById("monthly").style.color = "hsl(235,45%,61%)";
+      document.getElementById("weekly").style.color = "hsl(236, 100%, 87%)";
+      document.getElementById("monthly").style.color = "hsl(236, 100%, 87%)";
       /*Work*/
       document.getElementById("hoursWork").innerHTML =
         tableHoursByCategory[0].hoursDaily;
@@ -96,9 +97,10 @@ liElements.forEach((element) => {
         tableHoursByCategory[5].previousHoursDaily;
     } else if (element.id === "weekly") {
       /* Chane text color of the selection */
+    
+      document.getElementById("daily").style.color = "hsl(236, 100%, 87%)";
       document.getElementById("weekly").style.color = "White";
-      document.getElementById("daily").style.color = "hsl(235,45%,61%)";
-      document.getElementById("monthly").style.color = "hsl(235,45%,61%)";
+      document.getElementById("monthly").style.color = "hsl(236, 100%, 87%)";
       /*Work*/
       document.getElementById("hoursWork").innerHTML =
         tableHoursByCategory[0].hoursWeekly;
@@ -131,9 +133,9 @@ liElements.forEach((element) => {
         tableHoursByCategory[5].previousHoursWeekly;
     } else {
       /* Chane text color of the selection */
+      document.getElementById("daily").style.color = "hsl(236, 100%, 87%)";
+      document.getElementById("weekly").style.color = "hsl(236, 100%, 87%)";
       document.getElementById("monthly").style.color = "White";
-      document.getElementById("daily").style.color = "hsl(235,45%,61%)";
-      document.getElementById("weekly").style.color = "hsl(235,45%,61%)";
       /*Work*/
       document.getElementById("hoursWork").innerHTML =
         tableHoursByCategory[0].hoursMonthly;
@@ -170,7 +172,7 @@ liElements.forEach((element) => {
 
 // DARKMODE
 
-let darkMode = localStorage.getItem("drakMode");
+let darkMode = localStorage.getItem("darkkMode");
 console.log(darkMode);
 const darkModeToggle = document.querySelector("#dark-mode-toggle");
 
